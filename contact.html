@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">Fitness Tips for Beginners</div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="main-content container contact-form">
+    <h1>Contact</h1>
+    <p>
+      Use the form below to send questions or feedback about the site.
+      This is a demo form created for the class project.
+    </p>
+
+    <form id="contactForm" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2024 Fitness Tips for Beginners</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="https://www.cdc.gov/physicalactivity/" target="_blank">CDC Fitness Guidelines</a>
+        <a href="https://www.fitness.gov/" target="_blank">Fitness.gov</a>
+        <a href="https://www.healthline.com/nutrition" target="_blank">Healthline Nutrition</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple script to "process" the form for the assignment -->
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Thank you! Your message has been received. (Demo form for class project.)');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
