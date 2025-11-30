@@ -261,3 +261,7 @@ button[type="submit"]:hover {
     font-size: 1.6rem;
   }
 }
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
