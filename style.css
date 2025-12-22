@@ -281,3 +281,16 @@ button[type="submit"]:hover {
   margin: 20px auto;
   border-radius: 10px;
 }
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 30px;
+}
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 30px;
+}
+
